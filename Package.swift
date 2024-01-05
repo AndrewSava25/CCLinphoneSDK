@@ -11,31 +11,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "linphonesw",
-            targets: ["linphonesw",
-                    "ZXing",
-                    "bctoolbox-ios",
-                    "bctoolbox-tester",
-                    "bctoolbox",
-                    "belcard",
-                    "belle-sip",
-                    "belr",
-                    "lime",
-                    "limetester",
-                    "linphonetester",
-                    "mediastreamer2",
-                    "msamr",
-                    "mscodec2",
-                    "msopenh264",
-                    "mssilk",
-                    "mswebrtc",
-                    "ortp",
-            ]),
-        .library(
-            name: "linphone",
-            targets: [
-                "linphone"
-            ]
-            )
+            targets: ["linphonesw"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -46,7 +22,24 @@ let package = Package(
         .target(
             name: "linphonesw",
               dependencies: [
-                "linphone"
+                "ZXing",
+                "bctoolbox-ios",
+                "bctoolbox-tester",
+                "bctoolbox",
+                "belcard",
+                "belle-sip",
+                "belr",
+                "lime",
+                "limetester",
+                "linphone",
+                "linphonetester",
+                "mediastreamer2",
+                "msamr",
+                "mscodec2",
+                "msopenh264",
+                "mssilk",
+                "mswebrtc",
+                "ortp"
               ]
         ),
         .binaryTarget(name:"ZXing", path:"XCFrameworks/ZXing.xcframework"),
