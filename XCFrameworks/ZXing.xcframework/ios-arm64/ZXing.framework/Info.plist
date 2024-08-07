@@ -15,7 +15,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>12.0</string>
 	<key>MinimumOSVersion</key>
-	<string>12.0</string>
+	<string>100.0</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleLongVersionString</key>
